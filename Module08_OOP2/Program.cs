@@ -19,6 +19,10 @@ namespace Module08_OOP
             Shape s = new Shape();
             s.HelloShape();
 
+            Ball b = new Ball();
+            b.Weight = 2.31;
+            b.Bounce();
+
             Console.ReadKey();
         }
     }
@@ -32,21 +36,28 @@ namespace Module08_OOP
 
         public void HelloShape()
         {
-            Console.WriteLine();
             Console.WriteLine("Hello from HelloShape method");
-            Console.WriteLine();
         }
     }
 
     class Ball
     {
+        //"the nouns"...:
         private string shapeBall;
         private string color;
         private double weight;
 
-        public void Bounce()
+        //Now avaiable to other classes..."Encapsulation"...Refactor-->Encapsulate Field:
+        public double Weight
         {
-            Console.WriteLine("I am bouncing...");
+            get { return weight; }
+            set { weight = value; }
+        }
+
+        //"the verbs"...:
+        public void Bounce()
+        { 
+            Console.WriteLine("I am bouncing..."); 
         }
 
         public void Swing()
