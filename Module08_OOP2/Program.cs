@@ -37,4 +37,21 @@ namespace Module08_OOP
             Console.WriteLine();
         }
     }
+
+    class Ball
+    {
+        private string shapeBall;
+        private string color;
+        private double weight;
+
+        public void Bounce()
+        {
+            Console.WriteLine("I am bouncing...");
+        }
+
+        public void Swing()
+        {
+            Console.WriteLine("I am swinging...");
+        }
+    }
 }
