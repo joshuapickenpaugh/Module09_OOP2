@@ -17,6 +17,7 @@ namespace Module08_OOP
 
             //Object instantiation:
             Shape s = new Shape();
+            s.HelloShape();
 
             Console.ReadKey();
         }
@@ -31,7 +32,9 @@ namespace Module08_OOP
 
         public void HelloShape()
         {
+            Console.WriteLine();
             Console.WriteLine("Hello from HelloShape method");
+            Console.WriteLine();
         }
     }
 }
